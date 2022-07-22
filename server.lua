@@ -9,141 +9,141 @@ RegisterCommand('splayerdata', function(source)
     local Player = QBCore.Functions.GetPlayer(source)
     -- retrieves the player's unique citizen ID
     -- this id is often used to store information about the player in a database
-    local citizenid = PLayer.PlayerData.citizenid
+    local citizenid = Player.PlayerData.citizenid
     -- retrieves the player's cash balance
-    local cash = PLayer.PlayerData.money.cash
+    local cash = Player.PlayerData.money.cash
     -- retrieves the player's bank balance
-    local bank = PLayer.PlayerData.money.bank
+    local bank = Player.PlayerData.money.bank
     -- retrieves the player's first name
-    local firstname = PLayer.PlayerData.charinfo.firstname
+    local firstname = Player.PlayerData.charinfo.firstname
     -- retrieves the player's last name
-    local lastname = PLayer.PlayerData.charinfo.lastname
+    local lastname = Player.PlayerData.charinfo.lastname
     -- retrieves the player's birthdate
-    local birthdate = PLayer.PlayerData.charinfo.birthdate
+    local birthdate = Player.PlayerData.charinfo.birthdate
     -- retrieves the player's gender
-    local gender = PLayer.PlayerData.charinfo.gender
+    local gender = Player.PlayerData.charinfo.gender
     -- retrieve's the player's nationality
-    local nationality = PLayer.PlayerData.charinfo.nationality
+    local nationality = Player.PlayerData.charinfo.nationality
     -- retrieves the player's phone number
-    local phone = PLayer.PlayerData.charinfo.phone
+    local phone = Player.PlayerData.charinfo.phone
     -- retrieves the player's bank account number
-    local account = PLayer.PlayerData.charinfo.account
+    local account = Player.PlayerData.charinfo.account
     -- retrieves the player's hunger level
-    local hunger = PLayer.PlayerData.metadata.hunger
+    local hunger = Player.PlayerData.metadata.hunger
     -- retrieves the player's thirst level
-    local thirst = PLayer.PlayerData.metadata.thirst
+    local thirst = Player.PlayerData.metadata.thirst
     -- retrieves the player's stress level
-    local stress = PLayer.PlayerData.metadata.stress
+    local stress = Player.PlayerData.metadata.stress
     -- retrieves the player's death status
-    local death = PLayer.PlayerData.metadata.isdead
+    local death = Player.PlayerData.metadata.isdead
     -- retrieves the player's last stand status
-    local laststand = PLayer.PlayerData.metadata.inlaststand
+    local laststand = Player.PlayerData.metadata.inlaststand
     -- retrieves the player's armor level
-    local armor = PLayer.PlayerData.metadata.armor
+    local armor = Player.PlayerData.metadata.armor
     -- retrieves the player's handcuff status
-    local handcuff = PLayer.PlayerData.metadata.ishandcuffed
+    local handcuff = Player.PlayerData.metadata.ishandcuffed
     -- retrieves the player's tracker status
-    local tracker = PLayer.PlayerData.metadata.tracker
+    local tracker = Player.PlayerData.metadata.tracker
     -- retrieves the player's jail status
-    local jail = PLayer.PlayerData.metadata.injail
+    local jail = Player.PlayerData.metadata.injail
     -- retrieves the player's jail items that were taken (table value)
-    local jailitems = PLayer.PlayerData.metadata.jailitems
+    local jailitems = Player.PlayerData.metadata.jailitems
     -- retrieves the player's status (weed or gunpowder) (table value)
-    local status = PLayer.PlayerData.metadata.status
+    local status = Player.PlayerData.metadata.status
     -- retrieves the player's phone information (table value)
-    local phoneinfo = PLayer.PlayerData.metadata.phone
+    local phoneinfo = Player.PlayerData.metadata.phone
     -- retrieves the player's fitbit status (table value)
-    local fitbit = PLayer.PlayerData.metadata.fitbit
+    local fitbit = Player.PlayerData.metadata.fitbit
     -- retrieves the player's command bindings (table value)
-    local commandbindings = PLayer.PlayerData.metadata.commandbinds
+    local commandbindings = Player.PlayerData.metadata.commandbinds
     -- retrieves the player's bloodtype
-    local bloodtype = PLayer.PlayerData.metadata.bloodtype
+    local bloodtype = Player.PlayerData.metadata.bloodtype
     -- retrieves the player's dealer rep level
-    local dealerrep = PLayer.PlayerData.metadata.dealerrep
+    local dealerrep = Player.PlayerData.metadata.dealerrep
     -- retrieves the player's crafting rep level
-    local craftingrep = PLayer.PlayerData.metadata.craftingrep
+    local craftingrep = Player.PlayerData.metadata.craftingrep
     -- retrieves the player's attachment crafting rep level
-    local attachmentcraftingrep = PLayer.PlayerData.metadata.attachmentcraftingrep
+    local attachmentcraftingrep = Player.PlayerData.metadata.attachmentcraftingrep
     -- retrieves the player's job rep levels (table value)
-    local jobrep = PLayer.PlayerData.metadata.jobrep
+    local jobrep = Player.PlayerData.metadata.jobrep
     -- retrieves the player's tow job rep level
-    local towjobrep = PLayer.PlayerData.metadata.jobrep['tow']
+    local towjobrep = Player.PlayerData.metadata.jobrep['tow']
     -- retrieves the player's trucker job rep level
-    local truckerjobrep = PLayer.PlayerData.metadata.jobrep['trucker']
+    local truckerjobrep = Player.PlayerData.metadata.jobrep['trucker']
     -- retrieves the player's taxi job rep level
-    local taxijobrep = PLayer.PlayerData.metadata.jobrep['taxi']
+    local taxijobrep = Player.PlayerData.metadata.jobrep['taxi']
     -- retrieves the player's hotdog job rep level
-    local hotdogjobrep = PLayer.PlayerData.metadata.jobrep['hotdog']
+    local hotdogjobrep = Player.PlayerData.metadata.jobrep['hotdog']
     -- retrieves the player's callsign
-    local callsign = PLayer.PlayerData.metadata.callsign
+    local callsign = Player.PlayerData.metadata.callsign
     -- retrieves the player's fingerprint id
-    local fingerprintid = PLayer.PlayerData.metadata.fingerprint
+    local fingerprintid = Player.PlayerData.metadata.fingerprint
     -- retrieves the player's unique wallet id for crypto currency
-    local walletid = PLayer.PlayerData.metadata.walletid
+    local walletid = Player.PlayerData.metadata.walletid
     -- retrieves the player's criminal record (table value)
-    local criminalrecord = PLayer.PlayerData.metadata.criminalrecord
+    local criminalrecord = Player.PlayerData.metadata.criminalrecord
     -- retrieves the player's criminal record status
-    local criminalrecordstatus = PLayer.PlayerData.metadata.criminalrecord['hasRecord']
+    local criminalrecordstatus = Player.PlayerData.metadata.criminalrecord['hasRecord']
     -- retrieves the player's criminal record date
-    local criminalrecorddate = PLayer.PlayerData.metadata.criminalrecord['date']
+    local criminalrecorddate = Player.PlayerData.metadata.criminalrecord['date']
     -- retrieves the player's licences (table value)
-    local licences = PLayer.PlayerData.metadata.licences
+    local licences = Player.PlayerData.metadata.licences
     -- retrieves the player's driver's license status
-    local driverlicense = PLayer.PlayerData.metadata.licences['driver']
+    local driverlicense = Player.PlayerData.metadata.licences['driver']
     -- retrieves the player's weapon license status
-    local weaponlicense = PLayer.PlayerData.metadata.licences['weapon']
+    local weaponlicense = Player.PlayerData.metadata.licences['weapon']
     -- retrieves the player's business license status
-    local businesslicense = PLayer.PlayerData.metadata.licences['business']
+    local businesslicense = Player.PlayerData.metadata.licences['business']
     -- retrieves the player's inside status
-    local inside = PLayer.PlayerData.metadata.inside
+    local inside = Player.PlayerData.metadata.inside
     -- retrieves the player's house they are inside of
-    local house = PLayer.PlayerData.metadata.inside['house']
+    local house = Player.PlayerData.metadata.inside['house']
     -- retrieves the player's apartment info for which one they are in (table value)
-    local apartment = PLayer.PlayerData.metadata.inside['apartment']
+    local apartment = Player.PlayerData.metadata.inside['apartment']
     -- retrieves the player's apartment type
-    local apartmenttype = PLayer.PlayerData.metadata.inside['apartment']['apartmenttype']
+    local apartmenttype = Player.PlayerData.metadata.inside['apartment']['apartmenttype']
     -- retrieves the player's apartment id
-    local apartmentid = PLayer.PlayerData.metadata.inside['apartment']['apartmentid']
+    local apartmentid = Player.PlayerData.metadata.inside['apartment']['apartmentid']
     -- retrieves the player's phone data (table value)
-    local phonedata = PLayer.PlayerData.metadata.phonedata
+    local phonedata = Player.PlayerData.metadata.phonedata
     -- retrieves the player's phone serial number
-    local serialnumber = PLayer.PlayerData.metadata.phonedata['serialnumber']
+    local serialnumber = Player.PlayerData.metadata.phonedata['serialnumber']
     -- retrieves the player's installed apps (table value)
-    local installedapps = PLayer.PlayerData.metadata.phonedata['installedapps']
+    local installedapps = Player.PlayerData.metadata.phonedata['installedapps']
     -- retrieves the player's job information (table value)
-    local jobinfo = PLayer.PlayerData.job
+    local jobinfo = Player.PlayerData.job
     -- retrieves the player's job name
-    local jobname = PLayer.PlayerData.job.name
+    local jobname = Player.PlayerData.job.name
     -- retrieves the player's job label
-    local joblabel = PLayer.PlayerData.job.label
+    local joblabel = Player.PlayerData.job.label
     -- retrieves the player's job payment
-    local jobpayment = PLayer.PlayerData.job.payment
+    local jobpayment = Player.PlayerData.job.payment
     -- retrieves the player's job type
-    local jobtype = PLayer.PlayerData.job.type
+    local jobtype = Player.PlayerData.job.type
     -- retrieves the player's job duty status
-    local jobduty = PLayer.PlayerData.job.onduty
+    local jobduty = Player.PlayerData.job.onduty
     -- retrieves the player's job boss status
-    local jobboss = PLayer.PlayerData.job.isboss
+    local jobboss = Player.PlayerData.job.isboss
     -- retrieves the player's job grade (table value)
-    local jobgrade = PLayer.PlayerData.job.grade
+    local jobgrade = Player.PlayerData.job.grade
     -- retrieves the player's job grade name
-    local jobgradename = PLayer.PlayerData.job.grade.name
+    local jobgradename = Player.PlayerData.job.grade.name
     -- retrieves the player's job grade label
-    local jobgradelabel = PLayer.PlayerData.job.grade.label
+    local jobgradelabel = Player.PlayerData.job.grade.label
     -- retrieves the player's gang information (table value)
-    local ganginfo = PLayer.PlayerData.gang
+    local ganginfo = Player.PlayerData.gang
     -- retrieves the player's gang name
-    local gangname = PLayer.PlayerData.gang.name
+    local gangname = Player.PlayerData.gang.name
     -- retrieves the player's gang label
-    local ganglabel = PLayer.PlayerData.gang.label
+    local ganglabel = Player.PlayerData.gang.label
     -- retrieves the player's gang boss status
-    local gangboss = PLayer.PlayerData.gang.isboss
+    local gangboss = Player.PlayerData.gang.isboss
     -- retrieves the player's gang grade (table value)
-    local ganggrade = PLayer.PlayerData.gang.grade
+    local ganggrade = Player.PlayerData.gang.grade
     -- retrieves the player's gang grade name
-    local ganggradename = PLayer.PlayerData.gang.grade.name
+    local ganggradename = Player.PlayerData.gang.grade.name
     -- retrieves the player's gang grade level
-    local ganggradelevel = PLayer.PlayerData.gang.grade.level
+    local ganggradelevel = Player.PlayerData.gang.grade.level
 end, false)
 
 -- Money handling
