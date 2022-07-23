@@ -8,7 +8,7 @@ local QBCore = exports['qb-core']:GetCoreObject()
 
 local isLoggedIn = false -- Initialize a global variable in our file to keep track of player login status
 
-RegisterNetEvent('QBCore:Client:PlayerLoaded', function() -- this event is called when a player loads in
+RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function() -- this event is called when a player loads in
     isLoggedIn = true
     print('You have loaded') -- prints to your F8 console
 end)
