@@ -243,7 +243,7 @@ RegisterCommand('gimmeitem', function(source)
     -- this function is used to give a player an item
     -- you must specify the item name
     -- the second argument is the item quantity
-    Player.Functions.GiveItem('sandwich', 1)
+    Player.Functions.AddItem('sandwich', 1)
 end)
 
 RegisterCommand('removeitem', function(source)
